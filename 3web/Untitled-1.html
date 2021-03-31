@@ -69,7 +69,7 @@
         .Control {
             width: 960px;
             height: 720px;
-            padding-bottom: 100px;
+            padding-bottom: 200px;
             margin: auto;
 
         }
@@ -105,7 +105,7 @@
 
         .Control .Control-box .Control-box-black {
             width: 355px;
-            height: 245px;
+           
             background-color: black;
             color: rgb(255, 255, 255);
             font-size: 15px;
@@ -149,14 +149,13 @@
 
         .Control .Control-item {
             width: 682px;
-            height: 275px;
             position: relative;
             bottom: 600px;
             left: 100px;
-            padding: 15px;
+            padding: 20px;
             background-color: rgb(201, 196, 196);
             box-sizing: border-box;
-
+            line-height: 15px;
             z-index: -1;
         }
 
@@ -190,19 +189,21 @@
 
         .Control .red {
             color: rgb(104, 104, 104);
-            font-size: 15px;
-            margin-bottom: 15px;
+            font-size: 20px;
+        padding-left: 1em;
+        text-indent: -0.6em;
+        line-height: 25px;
         }
 
 
-
-        li {
-
-            color: black;
-
-            list-style: initial;
-
-        }
+       li::before{
+           content: '●';
+           color: red;
+           font-size: 1em;
+         
+           display: inline-block;
+           text-indent: 0em;
+       }
 
         body :nth-child(2n+3).Control {
             width: 960px;
@@ -231,6 +232,7 @@
             transform: scaleX(-1);
             filter: FlipH;
         }
+
     </style>
 </head>
 
